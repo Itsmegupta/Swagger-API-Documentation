@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Demo API",
+      "description": "API for demonstrating Swagger UI",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/api/users": {
+        "get": {
+          "summary": "Get all users",
+          "responses": {
+            "200": {
+              "description": "A list of users",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
